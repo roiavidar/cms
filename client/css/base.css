@@ -1,0 +1,12 @@
+html {
+    font-family: 'Josefin Sans', sans-serif !important;
+    padding: 0px;
+    direction: rtl;
+    font-size: 24px;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+}

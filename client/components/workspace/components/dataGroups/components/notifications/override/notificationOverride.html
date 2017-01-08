@@ -1,0 +1,7 @@
+<div class="Notification" ng-if="fileObj.isOverridden">
+    שים לב המשתמש
+    <span class="Notification-userName">{{userName}}</span>
+    <br> דרס את הקובץ שאתה עובד עליו
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+    <md-button class="md-raised Notification-button" data-ng-click="fileObj.isOverridden = false">סגור</md-button>
+</div>

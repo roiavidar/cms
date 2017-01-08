@@ -1,0 +1,8 @@
+<ul class="DataGroup-list">
+    <li class="DataGroup-listItem" data-ng-repeat="property in properties">
+        <md-input-container class="md-block">
+            <label style="transform-origin: right top;">{{property.name}}</label>
+            <input type="text" class="DataGroup-value" ng-model="property.value">
+        </md-input-container>
+    </li>
+</ul>

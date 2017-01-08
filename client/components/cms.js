@@ -1,0 +1,1 @@
+var App = angular.module('interactiveCMS', ['ui.router', 'ngMaterial']);

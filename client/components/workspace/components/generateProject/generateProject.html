@@ -1,0 +1,11 @@
+<div class="GenerateProject-wrapper">
+    <md-input-container>
+        <label style="transform-origin: right top;">לינק לקובץ HTML:</label>
+        <input type="text" class="GenerateProject-input" ng-model="data.link" style="direction: ltr;">
+    </md-input-container>
+    <md-button class="md-raised md-primary" data-ng-click="generateProject()">צור</md-button>
+    <div class="GenerateProject-projectDataWrapper" ng-if="data.projectData !== ''">
+        <span>קוד הפרויקט:</span>
+        <div class="GenerateProject-projectData" ng-bind="data.projectData" style="direction: ltr;"></div>
+    </div>
+</div>

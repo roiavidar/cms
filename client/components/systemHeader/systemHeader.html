@@ -1,0 +1,22 @@
+<div ng-if="user.name !== ''">
+    <header class="SystemHeader-header">
+        <h3>מערכת לניהול תוכן</h3>
+        <h1>אינטראקטיב</h1>
+        <span class="SystemHeader-systemMode">{{user.roleHebrewText}}</span>
+        <div class="SystemHeader-userNameBar">
+            <span>שלום </span><span class="SystemHeader-userName">{{user.name}}</span><span class="SystemHeader-changeName" data-ng-click="clearName()">החלף שם</span>
+        </div>
+    </header>
+    <form class="SystemHeader-loadProject">
+        <md-button class="md-raised md-primary" ng-click="selectFile()">טען פרויקט</md-button>
+        <input type="file" style="display:none" id="file" name='file' onchange="angular.element(this).scope().fileNameChanged(this);">
+    </form>
+</div>
+<div class="SystemHeader-login" ng-if="user.name === ''">
+    <md-input-container class="SystemHeader-loginContainer">
+        <label class="SystemHeader-loginFullNameInput" style="transform-origin: right top;">שם מלא:</label>
+        <input type="text" class="SystemHeader-loginInput" ng-model="userName">
+    </md-input-container>
+    <md-button class="SystemHeader-newUserNameButton md-raised md-primary" data-ng-click="setUserName(userName)">אישור</md-button>
+</div>
+<notification-format-error></notification-format-error>

@@ -1,0 +1,18 @@
+<div class="ItemsList">
+    <md-input-container class="ItemsList-headLine">
+        <label style="transform-origin: right top;">{{nameOfList}}:</label>
+        <input type="text" class="ItemsList-input" ng-model="properties.header" required>
+    </md-input-container>
+    <div class="ItemsList-properties">{{nameOfItems}}:</div>
+    <ul class="ItemsList-list">
+        <li ng-repeat="property in properties.dataItem track by $index" ng-if="!property.toDelete">
+            <md-input-container class="ItemsList-property" flex-gt-sm>
+                <input ng-model="property.name" required>
+            </md-input-container>
+            <i class="ItemsList-removeRow fa fa-times-circle" aria-hidden="true" ng-click="removeRow($index)" ng-if="properties.dataItem.length > 1" tabindex=-1></i>
+        </li>
+    </ul>
+    <div class="ItemsList-controls">
+        <i class="ItemsList-addRow fa fa-plus-circle" aria-hidden="true" ng-click="addRow()" data-focus-new-field></i>
+    </div>
+</div>

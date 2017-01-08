@@ -1,0 +1,6 @@
+<ul class="Workspace-dataGroupList">
+    <li ng-repeat="dataGroup in dataGroupsState.dataGroups track by $index" ng-if="dataGroupsState.currentDataGroup.index === $index">
+        <data-data-group ng-model="dataGroup"></data-data-group>
+    </li>
+</ul>
+<notification-override></notification-override>

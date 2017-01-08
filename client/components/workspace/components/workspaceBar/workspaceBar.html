@@ -1,0 +1,6 @@
+<div class="WorkspaceBar-controllers">
+    <div class="WorkspaceBar-dynamicButtons" ui-view="workspaceBar"></div>
+    <i class="fa fa-floppy-o Workspace-save" ng-if="dataGroups[0].items.length !== 0" data-ng-click="saveProject()" aria-hidden="true"></i>
+    <i class="fa fa-cogs Workspace-generate" data-ng-class="{'Workspace-controllersActive': state.name === 'generateProject'}" aria-hidden="true" data-ng-click="state = 'generateProject'"></i>
+    <i class="fa fa-pencil-square-o Workspace-contentEditing" data-ng-class="{'Workspace-controllersActive': state.name === 'contentEdit'}" aria-hidden="true" data-ng-click="state = 'contentEditing'"></i>
+</div>

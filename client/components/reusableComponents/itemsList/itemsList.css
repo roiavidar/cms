@@ -1,0 +1,22 @@
+.ItemsList-addRow {
+    color: #4ABDAC;
+    font-size: 36px !important;
+    margin: 0px 6px 6px;
+    cursor: pointer;
+}
+
+.ItemsList-removeRow {
+    color: red;
+    vertical-align: middle;
+    font-size: 36px !important;
+    cursor: pointer;
+}
+
+form[name='itemsList'] {
+    padding-right: 12px;
+}
+
+.ItemsList-property {
+    width: 300px;
+    display: inline-block;
+}

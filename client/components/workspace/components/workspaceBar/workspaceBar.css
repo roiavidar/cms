@@ -1,0 +1,145 @@
+.ProjectInfo-wrapper {
+    width: 100%;
+    background-color: #DFDCE3;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.ProjectInfo-header {
+    margin: 22px 6px 12px 0px;
+}
+
+.md-errors-spacer {
+    height: 0px;
+    min-height: 0px !important;
+}
+
+.Workspace {
+    width: 85%;
+    margin-bottom: 60px;
+}
+
+.DataGroup-items> li {
+    border-bottom: 2px dashed black;
+    margin-bottom: 22px;
+    position: relative;
+    padding: 10px 12px;
+}
+
+.DataGroup-removeItem {
+    position: absolute;
+    left: 0px;
+    top: -18px;
+    background: transparent;
+    border: none;
+}
+
+.DataGroup-newItem,
+.Scheme-addRow {
+    color: #4ABDAC;
+    font-size: 36px !important;
+    margin: 0px 6px 6px;
+    cursor: pointer;
+}
+
+.WorkspaceBar-controllers {
+    width: 84.9%;
+    height: 54px;
+    background-color: #DFDCE3;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    border-top: 1px solid black;
+}
+
+.Workspace-save {
+    float: left;
+    margin-left: 6px;
+    font-size: 54px !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+.Workspace-header {
+    background-color: #4ABDAC;
+    padding-bottom: 12px;
+}
+
+.Scheme-removeRow {
+    color: red;
+    vertical-align: middle;
+    font-size: 36px !important;
+    cursor: pointer;
+}
+
+form[name='scheme'] {
+    padding-right: 12px;
+}
+
+.Scheme-property {
+    width: 300px;
+    display: inline-block;
+}
+
+.Notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: #DFDCE3;
+    padding: 20px 20px 0px;
+    border: 5px solid black;
+    transform: translate(-50%, -50%);
+}
+
+.Notification-button {
+    display: block;
+    margin: 20px auto;
+}
+
+.Workspace-dataGroupList {
+    overflow-y: scroll;
+    position: absolute;
+    height: 66%;
+    width: 85%;
+    margin-top: 0px;
+    padding-top: 24px;
+}
+
+.Workspace-header h1 {
+    font-size: 54px;
+    margin: 0px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.Workspace-header h3 {
+    margin: 0px;
+    font-size: 24px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.Notification-userName {
+    color: rgb(63, 81, 181);
+}
+
+.DataGroup-items> li,
+.ProjectInfo-wrapper,
+.Workspace-header {
+    padding-right: 16px;
+}
+
+.Workspace-generate {
+    float: left;
+    margin-left: 12px;
+    font-size: 54px !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+.Workspace-controllers button {
+    margin: 10px 12px;
+}
+
+.WorkspaceBar-dynamicButtons {
+    display: inline-block;
+}

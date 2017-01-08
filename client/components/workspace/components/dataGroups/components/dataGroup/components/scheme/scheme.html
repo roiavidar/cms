@@ -1,0 +1,20 @@
+<div class="Scheme">
+    <form name='scheme' novalidate>
+        <md-input-container class="Scheme-headLine">
+            <label style="transform-origin: right top;">שם הגיליון:</label>
+            <input type="text" class="Scheme-input" ng-model="properties.header" required>
+        </md-input-container>
+        <div class="Scheme-properties">שדות:</div>
+        <ul class="Scheme-list">
+            <li ng-repeat="property in properties.dataItem track by $index" ng-if="!property.toDelete">
+                <md-input-container class="Scheme-property" flex-gt-sm>
+                    <input ng-model="property.name" required>
+                </md-input-container>
+                <i class="Scheme-removeRow fa fa-times-circle" aria-hidden="true" ng-click="removeRow($index)" ng-if="properties.dataItem.length > 1" tabindex=-1></i>
+            </li>
+        </ul>
+        <div class="Scheme-controls">
+            <i class="Scheme-addRow fa fa-plus-circle" aria-hidden="true" ng-click="addRow()" data-focus-new-field></i>
+        </div>
+    </form>
+</div>

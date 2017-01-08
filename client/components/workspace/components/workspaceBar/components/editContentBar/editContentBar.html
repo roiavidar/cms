@@ -1,0 +1,6 @@
+<div class="Workspace-contentEditingButtonsWrapper">
+        <md-button class="Scheme-create md-raised md-primary" data-ng-click="editContentBar.acceptScheme()" ng-disabled="currentDataGroup.validation" ng-if="dataGroups[currentDataGroup.index].scheme.state === 'construction'">צור גיליון</md-button>
+        <md-button class="DataGroup-copy md-raised" data-ng-click="editContentBar.DataGroupsService.copyScheme()" ng-if="editContentCtrl.isDeveloper() && dataGroups[currentDataGroup.index].scheme.state === 'done'">שכפל</md-button>
+        <md-button class="DataGroup-edit md-raised" data-ng-click="editContentBar.DataGroupsService.editScheme()" ng-if="editContentCtrl.isDeveloper() && dataGroups[currentDataGroup.index].scheme.state === 'done'">ערוך</md-button>
+        <md-button class="DataGroup-delete md-raised" data-ng-click="editContentBar.DataGroupsService.deleteDataGroup()" ng-if="editContentCtrl.isDeveloper() && dataGroups[currentDataGroup.index].scheme.state === 'done'">מחק הכל</md-button>
+</div>

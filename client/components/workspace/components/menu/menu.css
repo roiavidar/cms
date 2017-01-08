@@ -1,0 +1,53 @@
+.ProjectMenu {
+    position: fixed;
+    top: 0px;
+    width: 15%;
+    left: 0px;
+    background-color: #F7B733;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.ProjectMenu> ul {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.ProjectMenu-item {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    background-color: #DFDCE3;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.ProjectMenu-item> a {
+    color: white;
+    text-decoration: none;
+}
+
+.ProjectMenu-active {
+    font-weight: bold;
+    background-color: #FC4A1A;
+}
+
+.ProjectMenu-active a {
+    color: black;
+}
+
+.ProjectMenu-addScheme {
+    text-align: center;
+    padding: 6px;
+}
+
+.ProjectMenu-createScheme {
+    color: black;
+    font-size: 36px !important;
+    cursor: pointer;
+}

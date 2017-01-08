@@ -1,0 +1,14 @@
+<div class="DataGroup" id="{{dataGroup.id}}">
+    <scheme ng-model="dataGroup.scheme" ng-if="dataGroup.scheme.state==='construction'"></scheme>
+    <div class="DataGroup-content" ng-if="dataGroup.scheme.state==='done'">
+        <ul class="DataGroup-items">
+            <li ng-repeat="item in items track by $index">
+                <data-data-item ng-model="item"></data-data-item>
+                <button class="fa fa-trash DataGroup-removeItem" data-ng-click="removeDataItem($index,items)" tabindex=-1></button>
+            </li>
+        </ul>
+        <div class="DataGroup-controllers">
+            <i class="DataGroup-newItem fa fa-plus-circle" aria-hidden="true" data-ng-click="createNewDataItem()" data-focus-new-item></i>
+        </div>
+    </div>
+</div>

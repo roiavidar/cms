@@ -1,0 +1,10 @@
+<div class="ProjectMenu">
+    <ul>
+        <li data-ng-repeat="dataGroup in menu.dataGroups track by $index" class="ProjectMenu-item" data-ng-class="{'ProjectMenu-active': $index === menu.currentDataGroup.index}">
+            <a data-ng-click="setActive($index)" target="_self">{{ dataGroup.scheme.header }}</a>
+        </li>
+        <li class="ProjectMenu-addScheme">
+            <i class="md-raised ProjectMenu-createScheme fa fa-plus-circle" aria-hidden="true"ng-click="createDataGroup()" ng-if="isDeveloper()" role="button" tabindex="0"></i>
+        </li>
+    </ul>
+</div>

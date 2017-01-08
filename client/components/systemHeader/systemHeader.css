@@ -1,0 +1,75 @@
+.SystemHeader-header h1 {
+    font-size: 54px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.SystemHeader-header h3 {
+    font-size: 24px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.SystemHeader-systemMode {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.SystemHeader-loginContainer {
+    width: 75%;
+    display: inline-block;
+    text-align: right;
+}
+
+.SystemHeader-loginInput {
+    border-bottom: 3px solid white !important;
+}
+
+.SystemHeader-loginInput {
+    color: white !important;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.SystemHeader-userName {
+    color: rgb(63, 81, 181);
+    font-size: 36px;
+    padding: 24px 12px 16px 16px;
+    font-weight: bold;
+}
+
+.SystemHeader-changeName {
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.SystemHeader-userNameBar span:not(.SystemHeader-userName) {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.SystemHeader-header {
+    color: white;
+}
+
+.SystemHeader-loadProject {
+    margin-top: 12px;
+}
+
+.SystemHeader-login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    font-size: 36px;
+    color: black;
+    text-align: center;
+}
+
+.SystemHeader-loginFullNameInput {
+    transform-origin: right top;
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+    font-size: 54px;
+}
+
+.SystemHeader-newUserNameButton {
+    vertical-align: super;
+}
